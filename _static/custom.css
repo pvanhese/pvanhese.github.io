@@ -1,0 +1,235 @@
+
+/* figures */
+
+div.figure p.caption span.caption-text {
+    display: inline-block;
+    width: 550px;
+}
+
+
+
+/* images */
+
+img.shadow {
+    display: block;
+    margin: 10px auto 10px auto;
+    padding: 0;
+    border: 1px solid #b0b0b0;
+    /*background: #eeeeee;*/
+    -moz-box-shadow: 2px 2px 3px 0 #ccc;
+    -webkit-box-shadow: 2px 2px 3px 0 #ccc;
+    box-shadow: 2px 2px 3px 0 #ccc;
+}
+
+img.shadow10 { /* with 10px padding */
+    display: block;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border: 1px solid #b0b0b0;
+    /*background: #eeeeee;*/
+    -moz-box-shadow: 2px 2px 3px 0 #ccc;
+    -webkit-box-shadow: 2px 2px 3px 0 #ccc;
+    box-shadow: 2px 2px 3px 0 #ccc;
+}
+
+img.shadow15 { /* with 15px padding */
+    display: block;
+    margin: 10px auto 10px auto;
+    padding: 15px;
+    border: 1px solid #b0b0b0;
+    /*background: #eeeeee;*/
+    -moz-box-shadow: 2px 2px 3px 0 #ccc;
+    -webkit-box-shadow: 2px 2px 3px 0 #ccc;
+    box-shadow: 2px 2px 3px 0 #ccc;
+}
+
+img.shadow20 { /* with 20px padding */
+    display: block;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 1px solid #b0b0b0;
+    /*background: #eeeeee;*/
+    -moz-box-shadow: 2px 2px 3px 0 #ccc;
+    -webkit-box-shadow: 2px 2px 3px 0 #ccc;
+    box-shadow: 2px 2px 3px 0 #ccc;
+}
+
+p.caption {
+    margin-top: 10px;
+}
+
+/*.logo img {*/
+    /*display: block;*/
+    /*margin-left: -2px;*/
+    /*!*margin-right: auto;*!*/
+    /*margin-bottom: 10px;*/
+    /*padding: 0px;*/
+    /*border: 1px solid #b0b0b0;*/
+    /*background: #eeeeee;*/
+    /*-moz-box-shadow: 2px 2px 3px 0 #ccc;*/
+    /*-webkit-box-shadow: 2px 2px 3px 0 #ccc;*/
+    /*box-shadow: 2px 2px 3px 0 #ccc;*/
+
+    /*border-radius: 2px;*/
+/*}*/
+
+#tags > span > a {
+}
+
+a,
+a.reference {
+    color: #74b4cb;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a:hover,
+a.reference:hover {
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+div.sphinxsidebar {
+}
+
+div.sphinxsidebar p {
+    /*color: #b0b0b0;*/
+    color: #AAA;
+}
+
+div.sphinxsidebar h3 {
+    color: #AAA;
+    /*color: #74b4cb;*/
+    font-size: 110%;
+}
+
+div.sphinxsidebar a {
+    color: #74b4cb;
+    /*color: #AAA;*/
+    text-decoration: none;
+    border-bottom: none;
+}
+
+div.sphinxsidebar a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+div.sphinxsidebar #searchbox form.search {
+    overflow: hidden;
+}
+
+div.sphinxsidebar #searchbox input[type="text"] {
+    float: left;
+    width: 80%;
+    padding: 0.25em;
+    box-sizing: border-box;
+
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+div.sphinxsidebar #searchbox input[type="submit"] {
+    float: left;
+    width: 20%;
+    border-left: none;
+    padding: 0.25em;
+    box-sizing: border-box;
+
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+hr {
+    border: 0;
+}
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+/* https://realpython.com/installing-python/ */
+
+div.highlight {
+    background-color: #f6f6f6;
+    border-radius: 2px;
+}
+
+div.highlight pre {
+    padding: 7px 14px;
+    margin: 0;
+    line-height: 1.3em;
+    border: 1pt dashed #aaa;
+    border-radius: 2px;
+}
+
+/*
+div.highlight-bash::before {
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #999;
+    padding: 0;
+    text-indent: 1em;
+    background: #ccc;
+        background-color: rgb(204, 204, 204);
+    padding: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+div.highlight-bash::before {
+    content: "Shell";
+    background-color: #f3e2bb;
+    color: #c09022;
+}
+*/
+
+
+span.step {
+    background: #cccccc;
+    color: #ffffff;
+    /*color: gray;*/
+
+    display: inline-block;
+
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    line-height: 1.6em;
+    width: 1.6em;
+
+    /*border: 1pt solid gray;*/
+
+    font-weight: bold;
+    font-size: 0.7em;
+
+    text-align: center;
+    margin-right: 5px;
+    margin-top: -5px;
+
+    position: relative;
+    top: -1px;
+}
+
+nav {
+
+}
+
+
+
+/*
+https://stackoverflow.com/questions/4669689/how-to-use-color-in-text-with-restructured-text-rst2html-py-or-how-to-insert-h
+*/
+.marginnumber {
+    margin-left: -25px;  /* -25px - padding-right*/
+    /*padding-right: 0px;*/
+}
+
+

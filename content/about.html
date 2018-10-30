@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>About &#8212; T.R.</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Latest Articles" href="../index.html" />
+  
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <!--<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../_static/ablog.css" type="text/css" />
+  <link rel="alternate" type="application/atom+xml"  href="../blog/atom.xml" title="T.R.">
+  
+    <link rel="stylesheet" href="../_static/fontawesome/all.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+    <div class="blogheader">
+
+  <div class="blogheadertitle">
+    <a href="../index.html" class="nav-left">T.R.</a>
+  </div>
+
+  
+</div>
+
+  
+
+  <div class="document">
+    
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  
+  
+
+  
+
+  <div class="section" id="about">
+<span id="id1"></span><h1>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
+<p>Hi! I’m Peter.
+Welcome to my programming blog
+and little corner of the Internet
+where I share
+my love and passion for programming in general, and Python in particular.</p>
+<div class="section" id="about-me">
+<h2>About Me<a class="headerlink" href="#about-me" title="Permalink to this headline">¶</a></h2>
+<p>PhD in Engineering.
+Pythonista. Python coach at <a class="reference external" href="http://gent.coderdojobelgium.be/home">CoderDojo Ghent</a>.
+Double role Argentine tango dancer.
+Love my cats.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://biblio.ugent.be/person/001995083872?start=&amp;limit=100&amp;sort=year.desc&amp;sort=datecreated.desc">Academic publications</a></p></li>
+<li><p><a class="reference external" href="http://hdl.handle.net/1854/LU-891054">Dissertation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pvanhese/">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://be.linkedin.com/in/peter-van-hese-26407214b">LinkedIn</a></p></li>
+</ul>
+</div>
+<div class="section" id="code-i-wrote">
+<h2>Code I Wrote<a class="headerlink" href="#code-i-wrote" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fix-for-wikidpad">
+<h3>Fix for WikidPad<a class="headerlink" href="#fix-for-wikidpad" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/WikidPad/WikidPad/pull/12">Fix</a>
+for a
+<a class="reference external" href="https://groups.yahoo.com/neo/groups/wikidPad/conversations/topics/2292">long</a>
+<a class="reference external" href="https://groups.yahoo.com/neo/groups/wikidPad/conversations/topics/2569">standing</a>
+<a class="reference external" href="https://groups.yahoo.com/neo/groups/wikidPad/conversations/topics/4917">problem</a>
+(since 2006)
+in
+<a class="reference external" href="https://github.com/WikidPad/WikidPad">WikidPad</a>
+where
+<a class="reference external" href="https://github.com/WikidPad/WikidPad/issues/10">renaming of a wiki word failed to correctly update all links to it</a>.
+The problem was that
+WikidPad used a simple search and replace method to update the links,
+instead of using the AST and a text generator to properly update the wiki links.</p>
+<p><a class="reference external" href="https://github.com/WikidPad/WikidPad/pull/12">My fix</a> (2017)
+is included in
+<a class="reference external" href="https://github.com/WikidPad/WikidPad/releases/tag/WikidPad-2-3-beta16">WikidPad-2-3-beta16</a>
+and later.</p>
+<p>It taught me (among other things):
+the internals of WikidPad pages, subpages and wiki links;
+the implementation of the wiki languages using
+<a class="reference external" href="https://github.com/pyparsing/pyparsing/">pyparser</a>;
+how to modify the wiki links in the AST, and
+how to build a text generator that takes the modified AST
+as input and returns the wiki text with correctly updated links as output,
+with the syntax according to the wiki language;
+the use of <a class="reference external" href="https://docs.pytest.org/en/latest/">pytest</a>
+to build a test suite.</p>
+</div>
+<div class="section" id="website-coderdojo-ghent-python-track">
+<h3>Website CoderDojo Ghent - Python track<a class="headerlink" href="#website-coderdojo-ghent-python-track" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://coderdojogentpython.readthedocs.io/">Website</a>
+for the Python track at <a class="reference external" href="http://gent.coderdojobelgium.be/home">CoderDojo Ghent</a>.
+I build the website using <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>
+and <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a>.</p>
+</div>
+</div>
+</div>
+
+
+  <div class="section">
+    
+
+    
+  </div>
+
+          </div>
+          
+      </div>
+    <div class="clearer"></div>
+  </div>
+  
+<div class="blogfooter">
+  <div class="blogbar">
+    <div class="categories">
+
+<h3>
+<a href="../blog/category.html">Categories</a>
+</h3>
+<p>
+  <ul>
+  
+    
+    <li><a href="../blog/category/how-to.html">How To</a>
+      
+      <span>&#9313;</span>
+    </li>
+    
+  
+    
+    <li><a href="../blog/category/math-fun.html">Math Fun</a>
+      
+      <span>&#9313;</span>
+    </li>
+    
+  
+    
+    <li><a href="../blog/category/notes.html">Notes</a>
+      
+      <span>&#9312;</span>
+    </li>
+    
+  
+  </ul>
+</p>
+</div>
+    <div class="tags">
+
+<h3>
+<a href="../blog/tag.html">Tags</a>
+</h3>
+<p>
+  <ul class="ablog-cloud">
+    
+      
+      <li class="ablog-cloud ablog-cloud-5">
+        <a href="../blog/tag/wikidpad.html">WikidPad</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../blog/tag/blog.html">blog</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../blog/tag/cards.html">cards</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../blog/tag/notebook.html">notebook</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../blog/tag/time.html">time</a></li>
+      
+    
+  </ul>
+</p>
+</div>
+    <div class="about">
+      <h3><a href="#" class="nav-left">About T.R.</a></h3>
+      <p>
+        I'm Peter.
+        Welcome to my programming blog where I share my ♥ for Python.
+      </p>
+      <p class="small">
+        <a href="#" class="nav-left">
+        Read More <i class="fas fa-angle-double-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="copyright-under">
+    <p class="small">&copy; Copyright 2016 - 2019 Peter Van Hese</p>
+  </div>
+</div>
+
+  </body>
+</html>

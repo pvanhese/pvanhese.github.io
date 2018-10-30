@@ -1,0 +1,727 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>These Are Special Times &#8212; T.R.</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <!--<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../../_static/ablog.css" type="text/css" />
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="T.R.">
+  
+    <link rel="stylesheet" href="../../_static/fontawesome/all.css" type="text/css" />
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/ipynb.css" type="text/css" />
+  
+
+  </head><body>
+  
+    <div class="blogheader">
+
+  <div class="blogheadertitle">
+    <a href="../../index.html" class="nav-left">T.R.</a>
+  </div>
+
+  
+</div>
+
+  
+
+  <div class="document">
+    
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  
+    <h1>These Are Special Times</h1>
+    
+
+
+<div class="section postlint">
+
+
+  Aug 21, 2018
+
+
+
+  <span>&nbsp;<i class="fa-fw fa fa-folder-open"></i>
+  
+    
+    <a href="../../blog/category/math-fun.html">Math Fun</a>
+    
+  
+
+
+
+  <span>&nbsp;<i class="fa-fw fa fa-tags"></i>
+  
+  
+    
+    <a href="../../blog/tag/time.html">time</a>
+    
+  
+    
+    <a href="../../blog/tag/notebook.html">notebook</a>
+    
+  
+
+
+
+  <span>&nbsp;<i class="fa-fw fa fa-language"></i>
+  
+    
+    <a href="../../blog/language/english.html">English</a>
+    
+  
+
+
+</div>
+  
+  
+
+  
+    <style type="text/css">
+      div.section h1 {
+        display: none;
+      }
+    </style>
+  
+
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 5ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+</style>
+<div class="section" id="These-Are-Special-Times">
+<h1>These Are Special Times<a class="headerlink" href="#These-Are-Special-Times" title="Permalink to this headline">¶</a></h1>
+<p><img alt="12:34" src="../../_images/1234_700.jpg" /></p>
+<p>I gazed at my alarm clock: 12:34. Amazing! It spelled 1-2-3-4. What a special time! Today will be a great day!</p>
+<div class="section" id="How-Many-Special-Times-Are-There?">
+<h2>How Many Special Times Are There?<a class="headerlink" href="#How-Many-Special-Times-Are-There?" title="Permalink to this headline">¶</a></h2>
+<p>The question is: how many special times are there in one day? To solve this, I’ll simply enumerate all possible times and check for each one if it is a special time.</p>
+<p>I’ll represent a time simply as a tuple <code class="docutils literal notranslate"><span class="pre">t</span></code> of hours and minutes.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">repr_t</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span> <span class="o">=</span> <span class="n">t</span>
+    <span class="k">return</span> <span class="s1">&#39;</span><span class="si">%02d</span><span class="s1">:</span><span class="si">%02d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>There are 24 hours in one day, and 60 minutes in one hour. The list of all possible times (ignoring seconds, as my alarm clock only displays hours and minutes) is:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">all_times</span> <span class="o">=</span> <span class="p">[(</span><span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<p>When do I appreciate a time as special? A time is special if <em>any</em> of the following is true:</p>
+<ul class="simple">
+<li><p>its hours equal its minutes, e.g., 10:10</p></li>
+<li><p>its digits (ignoring any leading zeros of its hours and minutes) form a series of incremental numbers (at least two) with increment one, e.g., 12:34, 01:02, but not 01:20</p></li>
+<li><p>it spells as the birthday of one of my cats, 30<span class="math notranslate nohighlight">\(^{th}\)</span> of November (11:30) or 8<span class="math notranslate nohighlight">\(^{th}\)</span> of August (08:12 or 12:08)</p></li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">is_special</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span> <span class="o">=</span> <span class="n">t</span>
+    <span class="k">if</span> <span class="n">hour</span> <span class="o">==</span> <span class="n">minute</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="n">digits</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s1">&#39;</span><span class="si">%d%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">t</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">digits</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">digits</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">digits</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">30</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">return</span> <span class="kc">False</span>
+
+<span class="k">assert</span> <span class="n">is_special</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="k">assert</span> <span class="n">is_special</span><span class="p">((</span><span class="mi">12</span><span class="p">,</span> <span class="mi">34</span><span class="p">))</span>
+<span class="k">assert</span> <span class="n">is_special</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">is_special</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+
+<span class="n">special_times</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">all_times</span> <span class="k">if</span> <span class="n">is_special</span><span class="p">(</span><span class="n">t</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">textwrap</span> <span class="k">import</span> <span class="n">wrap</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">repr_t</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">special_times</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">wrap</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="mi">6</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+00:00 00:01 00:12 01:01 01:02
+01:23 02:02 02:03 02:34 03:03
+03:04 03:45 04:04 04:05 04:56
+05:05 05:06 06:06 06:07 07:07
+07:08 08:08 08:09 08:12 09:09
+10:10 11:11 11:30 12:03 12:08
+12:12 12:34 13:13 14:14 15:15
+16:16 17:17 18:18 19:19 20:20
+21:21 22:22 23:04 23:23 23:45
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">len</span><span class="p">(</span><span class="n">special_times</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>45
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_times</span><span class="p">),</span> <span class="mi">100</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">special_times</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_times</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>(1440, 3.125)
+</pre></div>
+</div>
+</div>
+<p>So, every day 45 times are special. Out of all possible 1440 times, this is about 3 percent.</p>
+</div>
+<div class="section" id="Pretty-Picture-Of-Special-Times">
+<h2>Pretty Picture Of Special Times<a class="headerlink" href="#Pretty-Picture-Of-Special-Times" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = &#39;svg&#39;
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">t2theta_degr</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return polar angle (in degrees) of time mapped onto a 24 hour clock.&quot;&quot;&quot;</span>
+    <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span> <span class="o">=</span> <span class="n">t</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">360</span><span class="o">*</span><span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="n">hour</span><span class="o">+</span><span class="n">minute</span><span class="p">)</span><span class="o">/</span><span class="mi">1440</span>  <span class="c1"># map onto 360 degree clock</span>
+    <span class="n">theta</span> <span class="o">=</span> <span class="mi">360</span> <span class="o">-</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">90</span><span class="p">)</span>  <span class="c1"># to polar angle in degrees</span>
+    <span class="k">if</span> <span class="n">theta</span> <span class="o">&gt;=</span> <span class="mi">360</span><span class="p">:</span>
+        <span class="n">theta</span> <span class="o">-=</span> <span class="mi">360</span>
+    <span class="k">return</span> <span class="n">theta</span>
+
+<span class="k">assert</span> <span class="n">t2theta_degr</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="mi">90</span>    <span class="c1"># midnight on top</span>
+<span class="k">assert</span> <span class="n">t2theta_degr</span><span class="p">((</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="mi">0</span>     <span class="c1"># 6 AM on the right</span>
+<span class="k">assert</span> <span class="n">t2theta_degr</span><span class="p">((</span><span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="mi">270</span>  <span class="c1"># noon at the bottom</span>
+<span class="k">assert</span> <span class="n">t2theta_degr</span><span class="p">((</span><span class="mi">18</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="mi">180</span>  <span class="c1"># 6 PM on the left</span>
+<span class="k">assert</span> <span class="n">t2theta_degr</span><span class="p">((</span><span class="mi">24</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="mi">90</span>   <span class="c1"># equals midnight</span>
+
+<span class="k">def</span> <span class="nf">t2theta</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return polar angle (in radians) of time mapped onto a 24 hour clock.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="n">t2theta_degr</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+
+<span class="n">theta</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="p">[</span><span class="n">t2theta</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">special_times</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">special_times</span><span class="p">))</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;polar&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="s1">&#39;b*&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">markeredgecolor</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_rmax</span><span class="p">(</span><span class="mf">1.1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="s1">&#39;06:00&#39;</span><span class="p">,</span> <span class="s1">&#39;00:00&#39;</span><span class="p">,</span> <span class="s1">&#39;18:00&#39;</span><span class="p">,</span> <span class="s1">&#39;12:00&#39;</span><span class="p">],</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">([</span><span class="s1">&#39;&#39;</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;polar&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Distribution of the 45 special times on a 24 hour circle.</span>
+<span class="s2">Most of the special times are concentrated around</span>
+<span class="s2">midnight, the early hours of the day, and noon.</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;12:34 makes my day!&quot;</span><span class="p">,</span>
+    <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">t2theta</span><span class="p">((</span><span class="mi">12</span><span class="p">,</span> <span class="mi">34</span><span class="p">)),</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">220</span><span class="p">),</span> <span class="mf">2.10</span><span class="p">),</span>
+    <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+        <span class="n">headwidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+        <span class="n">headlength</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+        <span class="n">shrink</span><span class="o">=</span><span class="mf">0.3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/content_2018_special_times_18_0.svg" src="../../_images/content_2018_special_times_18_0.svg" /></div>
+</div>
+</div>
+<div class="section" id="Extra">
+<h2>Extra<a class="headerlink" href="#Extra" title="Permalink to this headline">¶</a></h2>
+<p>My alarm clock only shows hours and minutes. How many special times would there be if it included seconds?</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">repr_t2</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="n">second</span> <span class="o">=</span> <span class="n">t</span>
+    <span class="k">return</span> <span class="s1">&#39;</span><span class="si">%02d</span><span class="s1">:</span><span class="si">%02d</span><span class="s1">:</span><span class="si">%02d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="n">second</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">all_times2</span> <span class="o">=</span> <span class="p">[(</span><span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">is_special2</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="n">hour</span><span class="p">,</span> <span class="n">minute</span><span class="p">,</span> <span class="n">second</span> <span class="o">=</span> <span class="n">t</span>
+    <span class="k">if</span> <span class="n">hour</span> <span class="o">==</span> <span class="n">minute</span> <span class="o">==</span> <span class="n">second</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="n">digits</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s1">&#39;</span><span class="si">%d%d%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">t</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">digits</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">digits</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">digits</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">if</span> <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">30</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">if</span>  <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="n">t</span> <span class="o">==</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+
+    <span class="k">return</span> <span class="kc">False</span>
+
+<span class="k">assert</span> <span class="n">is_special2</span><span class="p">((</span><span class="mi">12</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">56</span><span class="p">))</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="n">is_special2</span><span class="p">((</span><span class="mi">12</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+<span class="n">special_times2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">all_times2</span> <span class="k">if</span> <span class="n">is_special2</span><span class="p">(</span><span class="n">t</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">repr_t2</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">special_times2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">wrap</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="mi">9</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+00:00:00 00:01:02 00:01:23 00:08:12 00:11:30
+00:12:03 00:12:08 00:12:34 01:01:01 01:02:03
+01:02:34 01:23:04 01:23:45 02:02:02 02:03:04
+02:03:45 02:34:05 02:34:56 03:03:03 03:04:05
+03:04:56 03:45:06 04:04:04 04:05:06 04:56:07
+05:05:05 05:06:07 06:06:06 06:07:08 07:07:07
+07:08:09 08:08:08 08:12:00 09:09:09 10:10:10
+11:11:11 11:30:00 12:03:04 12:03:45 12:08:00
+12:12:12 12:34:05 12:34:56 13:13:13 14:14:14
+15:15:15 16:16:16 17:17:17 18:18:18 19:19:19
+20:20:20 21:21:21 22:22:22 23:04:05 23:04:56
+23:23:23 23:45:06
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">len</span><span class="p">(</span><span class="n">special_times2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>57
+</pre></div>
+</div>
+</div>
+<p>So, with an alarm clock that includes seconds, every day 57 times are special, i.e., 12 more than with an alarm clock that shows only hours and minutes.</p>
+</div>
+</div>
+
+
+  <div class="section">
+    
+      
+    
+
+    
+  </div>
+
+          </div>
+          
+      </div>
+    <div class="clearer"></div>
+  </div>
+  
+<div class="blogfooter">
+  <div class="blogbar">
+    <div class="categories">
+
+<h3>
+<a href="../../blog/category.html">Categories</a>
+</h3>
+<p>
+  <ul>
+  
+    
+    <li><a href="../../blog/category/how-to.html">How To</a>
+      
+      <span>&#9313;</span>
+    </li>
+    
+  
+    
+    <li><a href="../../blog/category/math-fun.html">Math Fun</a>
+      
+      <span>&#9313;</span>
+    </li>
+    
+  
+    
+    <li><a href="../../blog/category/notes.html">Notes</a>
+      
+      <span>&#9312;</span>
+    </li>
+    
+  
+  </ul>
+</p>
+</div>
+    <div class="tags">
+
+<h3>
+<a href="../../blog/tag.html">Tags</a>
+</h3>
+<p>
+  <ul class="ablog-cloud">
+    
+      
+      <li class="ablog-cloud ablog-cloud-5">
+        <a href="../../blog/tag/wikidpad.html">WikidPad</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/blog.html">blog</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/cards.html">cards</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/notebook.html">notebook</a></li>
+      
+    
+      
+      <li class="ablog-cloud ablog-cloud-1">
+        <a href="../../blog/tag/time.html">time</a></li>
+      
+    
+  </ul>
+</p>
+</div>
+    <div class="about">
+      <h3><a href="../about.html" class="nav-left">About T.R.</a></h3>
+      <p>
+        I'm Peter.
+        Welcome to my programming blog where I share my ♥ for Python.
+      </p>
+      <p class="small">
+        <a href="../about.html" class="nav-left">
+        Read More <i class="fas fa-angle-double-right"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="copyright-under">
+    <p class="small">&copy; Copyright 2016 - 2019 Peter Van Hese</p>
+  </div>
+</div>
+
+  </body>
+</html>
